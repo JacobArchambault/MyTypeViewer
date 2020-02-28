@@ -6,16 +6,15 @@ namespace MyTypeViewer
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("***** Welcome to MyTypeViewer *****");
-            string typeName = "";
             do
             {
                 Console.WriteLine("\nEnter a type name to evaluate");
                 Console.Write("or enter Q to quit: ");
                 // Get name of type.
-                typeName = Console.ReadLine();
+                string typeName = Console.ReadLine();
                 // Does user want to quit?
                 if (typeName.Equals("Q", StringComparison.OrdinalIgnoreCase))
                 {
